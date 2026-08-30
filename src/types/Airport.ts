@@ -1,0 +1,12 @@
+export interface Airport {
+
+    id: number;
+
+    name: string;
+
+    city: string;
+
+    country: string;
+
+    code: string;
+}
