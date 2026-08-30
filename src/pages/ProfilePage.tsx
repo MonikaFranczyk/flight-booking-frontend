@@ -27,7 +27,7 @@ export default function ProfilePage() {
             try {
                 const token = localStorage.getItem("token");
 
-                const response = await fetch("http://localhost:8080/api/users/me", {
+                const response = await fetch("http://flight-booking-system-env.eba-eedyr4xa.eu-north-1.elasticbeanstalk.com/api/users/me", {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",
