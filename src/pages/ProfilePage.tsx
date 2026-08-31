@@ -27,7 +27,7 @@ export default function ProfilePage() {
             try {
                 const token = localStorage.getItem("token");
 
-                const response = await fetch("https://d13hn80jis774u.cloudfront.net", {
+                const response = await fetch("https://d13hn80jis774u.cloudfront.net/api/users/me", {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",
