@@ -94,17 +94,18 @@ export default function RegisterPage() {
             >
 
                 <Typography
-                    variant="h4"
-                    textAlign="center"
-                    fontWeight="bold"
+                    sx={{variant:"h4",
+                        textAlign: "center",
+                        fontWeight: "bold"}}
                 >
                     Create account
                 </Typography>
 
                 <Typography
-                    textAlign="center"
-                    color="text.secondary"
-                    mb={4}
+                    sx={{
+                        textAlign: "center",
+                        color: "text.secondary",
+                        mb: 4}}
                 >
                     Register for SkyBook
                 </Typography>
@@ -176,8 +177,10 @@ export default function RegisterPage() {
                 </Stack>
 
                 <Typography
-                    mt={4}
-                    textAlign="center"
+
+                    sx={{
+                        mt: 4,
+                        textAlign: "center"}}
                 >
                     Already have an account?{" "}
 

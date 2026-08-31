@@ -52,16 +52,20 @@ export default function FlightSummaryCard({ flight }: Props) {
 
                 <Typography
                     variant="h4"
-                    fontWeight="bold"
-                    mb={3}
+                    sx={{
+                        fontWeight:"bold",
+                        mb: 3
+                    }}
                 >
                     Flight summary
                 </Typography>
 
                 <Stack
-                    direction="row"
-                    justifyContent="space-between"
-                    alignItems="center"
+                    sx={{
+                        direction:"row",
+                        justifyContent:"space-between",
+                        alignItems:"center"
+                    }}
                 >
 
                     <Typography variant="h4">
@@ -80,9 +84,11 @@ export default function FlightSummaryCard({ flight }: Props) {
                 </Stack>
 
                 <Stack
-                    direction="row"
-                    justifyContent="space-between"
-                    mt={2}
+                    sx={{
+                        direction:"row",
+                        justifyContent:"space-between",
+                        mt:2
+                    }}
                 >
 
                     <Typography variant="h6">
@@ -98,15 +104,11 @@ export default function FlightSummaryCard({ flight }: Props) {
                 <Divider sx={{ my: 3 }} />
 
                 <Typography>
-                    <strong>Airline:</strong> {flight.airlineName}
+                    <strong>Airline:</strong> {flight.airline}
                 </Typography>
 
                 <Typography>
                     <strong>Flight:</strong> {flight.flightNumber}
-                </Typography>
-
-                <Typography>
-                    <strong>Aircraft:</strong> {flight.aircraft}
                 </Typography>
 
                 <Typography>
@@ -125,9 +127,11 @@ export default function FlightSummaryCard({ flight }: Props) {
 
                 <Typography
                     variant="h4"
-                    color="primary"
-                    fontWeight="bold"
-                    textAlign="right"
+                    sx={{
+                        color:"primary",
+                        fontWeight:"bold",
+                        textAlign:"right"
+                    }}
                 >
                     {flight.price} PLN
                 </Typography>

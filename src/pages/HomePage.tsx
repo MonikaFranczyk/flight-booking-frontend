@@ -1,7 +1,6 @@
 import {
     Box,
     Button,
-    Container,
     Paper,
     Typography
 } from "@mui/material";
@@ -9,7 +8,6 @@ import {
 import { useNavigate } from "react-router-dom";
 
 import hero from "../assets/images/plane1.jpg";
-import Footer from "../components/layout/Footer.tsx";
 
 export default function HomePage() {
 

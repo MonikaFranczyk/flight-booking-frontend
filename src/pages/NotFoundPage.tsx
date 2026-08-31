@@ -53,8 +53,8 @@ export default function NotFoundPage() {
 
                         <Typography
                             variant="h4"
-                            fontWeight={800}
                             sx={{
+                                fontWeight: 800,
                                 color: "#17233c",
                                 mb: 1.5,
                             }}

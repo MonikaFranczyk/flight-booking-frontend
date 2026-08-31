@@ -138,9 +138,10 @@ export default function ProfilePage() {
                 {/* HEADER */}
                 <Box sx={{ mb: 5 }}>
                     <Typography
-                        variant="h3"
-                        fontWeight={800}
+
                         sx={{
+                            variant: "h3",
+                            fontWeight: 800,
                             color: "#fff",
                             mb: 1,
                         }}
@@ -221,9 +222,9 @@ export default function ProfilePage() {
                                 </Box>
 
                                 <Typography
-                                    variant="h5"
-                                    fontWeight={800}
                                     sx={{
+                                        variant: "h5",
+                                        fontWeight: 800,
                                         color: "#17233c",
                                         mb: 0.5,
                                     }}
@@ -277,8 +278,8 @@ export default function ProfilePage() {
 
                                 <Typography
                                     variant="h5"
-                                    fontWeight={800}
                                     sx={{
+                                        fontWeight: 800,
                                         color: "#17233c",
                                         mb: 1,
                                     }}
@@ -307,8 +308,8 @@ export default function ProfilePage() {
 
                                         <Typography
                                             variant="h6"
-                                            fontWeight={600}
                                             sx={{
+                                                fontWeight: 600,
                                                 color: "#17233c",
                                             }}
                                         >
@@ -328,8 +329,8 @@ export default function ProfilePage() {
 
                                         <Typography
                                             variant="h6"
-                                            fontWeight={600}
                                             sx={{
+                                                fontWeight: 600,
                                                 color: "#17233c",
                                             }}
                                         >
@@ -349,8 +350,8 @@ export default function ProfilePage() {
 
                                         <Typography
                                             variant="h6"
-                                            fontWeight={600}
                                             sx={{
+                                                fontWeight: 600,
                                                 color: "#17233c",
                                                 wordBreak: "break-word",
                                             }}
@@ -365,8 +366,8 @@ export default function ProfilePage() {
                                     <Box>
                                         <Typography
                                             variant="h6"
-                                            fontWeight={700}
                                             sx={{
+                                                fontWeight: 700,
                                                 color: "#17233c",
                                                 mb: 0.5,
                                             }}

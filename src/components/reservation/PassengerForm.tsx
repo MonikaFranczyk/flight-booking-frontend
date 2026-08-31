@@ -53,8 +53,10 @@ export default function PassengerForm({
 
         <Typography
             variant="h5"
-            fontWeight="bold"
-            mb={3}
+            sx={{
+                fontWeight:"bold",
+                mb:3
+            }}
         >
           Passenger {index + 1}
         </Typography>
@@ -108,28 +110,23 @@ export default function PassengerForm({
 
           <Grid size={{ xs: 12, md: 6 }}>
 
-            <TextField
-
-                fullWidth
-
-                type="date"
-
-                label="Birth date"
-
-                InputLabelProps={{
-                  shrink: true
-                }}
-
-                value={passenger.birthDate}
-
-                onChange={(e) =>
-                    handleChange(
-                        "birthDate",
-                        e.target.value
-                    )
-                }
-
-            />
+              <TextField
+                  fullWidth
+                  type="date"
+                  label="Birth date"
+                  slotProps={{
+                      inputLabel: {
+                          shrink: true
+                      }
+                  }}
+                  value={passenger.birthDate}
+                  onChange={(e) =>
+                      handleChange(
+                          "birthDate",
+                          e.target.value
+                      )
+                  }
+              />
 
           </Grid>
 

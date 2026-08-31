@@ -3,12 +3,10 @@ import { useNavigate } from "react-router-dom";
 
 import {
   Autocomplete,
-  Box,
   Button,
   Grid,
   Paper,
   TextField,
-  Typography
 } from "@mui/material";
 
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
@@ -102,7 +100,7 @@ export default function FlightSearchForm() {
             <Autocomplete
                 options={airports}
                 value={departureAirport}
-                onChange={(event, value) =>
+                onChange={(_, value) =>
                     setDepartureAirport(value)
                 }
                 getOptionLabel={(option) =>
@@ -123,7 +121,7 @@ export default function FlightSearchForm() {
             <Autocomplete
                 options={airports}
                 value={arrivalAirport}
-                onChange={(event, value) =>
+                onChange={(_, value) =>
                     setArrivalAirport(value)
                 }
                 getOptionLabel={(option) =>
@@ -159,16 +157,16 @@ export default function FlightSearchForm() {
           <Grid size={{ xs: 12, md: 6 }}>
 
             <TextField
-                label="Passengers"
+                label="Number of passengers"
                 type="number"
                 fullWidth
                 value={passengers}
-                onChange={(e) =>
-                    setPassengers(Number(e.target.value))
-                }
-                inputProps={{
-                  min: 1,
-                  max: 9
+                onChange={(e) => setPassengers(Number(e.target.value))}
+                slotProps={{
+                  htmlInput: {
+                    min: 1,
+                    max: 9
+                  }
                 }}
             />
 

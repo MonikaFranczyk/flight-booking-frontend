@@ -72,8 +72,10 @@ export default function FlightFilters({
 
             <Typography
                 variant="h5"
-                fontWeight="bold"
-                mb={3}
+                sx={{
+                    fontWeight: "bold",
+                    mb: 3
+                }}
             >
                 Filters
             </Typography>
@@ -82,17 +84,21 @@ export default function FlightFilters({
 
             <Typography
                 variant="subtitle1"
-                fontWeight={600}
-                mb={2}
+                sx={{
+                    fontWeight: 600,
+                    mb: 2
+                }}
             >
                 Airlines
             </Typography>
 
             <Stack
-                direction="row"
-                spacing={2}
                 useFlexGap
-                flexWrap="wrap"
+                sx={{
+                    flexWrap:"wrap",
+                    direction:"row",
+                    spacing:2
+                }}
             >
                 {airlines.map((airline) => (
                     <FormControlLabel
@@ -117,8 +123,10 @@ export default function FlightFilters({
 
             <Typography
                 variant="subtitle1"
-                fontWeight={600}
-                mb={2}
+                sx={{
+                    fontWeight:600,
+                    mb:2
+                }}
             >
                 Maximum price: {maxPrice} PLN
             </Typography>
@@ -138,13 +146,19 @@ export default function FlightFilters({
 
             <Typography
                 variant="subtitle1"
-                fontWeight={600}
-                mb={1}
+                sx={{
+                    fontWeight: 600,
+                    mb: 1
+                }}
             >
                 Stops
             </Typography>
 
-            <Box display="flex" justifyContent="flex-start">
+            <Box sx={{
+                    display:"flex",
+                    justifyContent:"flex-start"
+            }}
+                >
                 <FormControlLabel
                     label="Direct flights only"
                     control={

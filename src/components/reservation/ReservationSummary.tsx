@@ -37,8 +37,10 @@ export default function ReservationSummary({
 
             <Typography
                 variant="h5"
-                fontWeight="bold"
-                mb={3}
+                sx={{
+                    fontWeight:"bold",
+                    mb:2
+                }}
             >
                 Reservation summary
             </Typography>
@@ -49,7 +51,9 @@ export default function ReservationSummary({
 
             <Typography
                 variant="h6"
-                mb={2}
+                sx={{
+                    mb:2
+                }}
             >
                 {passengers}
             </Typography>
@@ -60,7 +64,9 @@ export default function ReservationSummary({
 
             <Typography
                 variant="h6"
-                mb={2}
+                sx={{
+                    mb:2
+                }}
             >
                 {price} PLN
             </Typography>
@@ -69,16 +75,20 @@ export default function ReservationSummary({
 
             <Typography
                 variant="h5"
-                fontWeight="bold"
+                sx={{
+                    fontWeight:"bold"
+                }}
             >
                 Total
             </Typography>
 
             <Typography
                 variant="h3"
-                color="primary"
-                fontWeight="bold"
-                mb={4}
+                sx={{
+                    color:"primary",
+                    fontWeight:"bold",
+                    mb:4
+                }}
             >
                 {total} PLN
             </Typography>

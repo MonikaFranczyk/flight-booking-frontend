@@ -195,16 +195,19 @@ export default function PaymentPage() {
 
                     <Typography
                         variant="h3"
-                        fontWeight="bold"
-                        textAlign="center"
-                    >
+                        sx={{
+                            fontWeight: "bold",
+                            textAlign: "center"
+                        }}>
                         Payment
                     </Typography>
 
                     <Typography
-                        textAlign="center"
-                        color="text.secondary"
-                        mb={4}
+                        sx={{
+                            textAlign:"center",
+                            color:"text.secondary",
+                            mb: 4
+                        }}
                     >
                         Complete your booking
                     </Typography>
@@ -213,12 +216,14 @@ export default function PaymentPage() {
 
                     <Typography
                         variant="h5"
-                        fontWeight="bold"
+                        sx={{
+                            fontWeight:"bold"
+                        }}
                     >
                         Flight summary
                     </Typography>
 
-                    <Typography mt={2}>
+                    <Typography sx={{mt:2}}>
                         Flight: {reservation.flightNumber}
                     </Typography>
 
@@ -230,18 +235,20 @@ export default function PaymentPage() {
 
                     <Typography
                         variant="h6"
-                        fontWeight="bold"
-                        textAlign="center"
-                        mb={2}
+                        sx={{
+                            fontWeight:"bold",
+                            textAlign:"center",
+                            mb:2
+                        }}
                     >
                         Accepted cards
                     </Typography>
 
                     <Stack
                         direction="row"
-                        spacing={3}
-                        justifyContent="center"
-                        sx={{ mb: 4 }}
+                        sx={{ mb: 4,
+                            spacing: 3,
+                            justifyContent:"center"}}
                     >
 
                         <FaCcVisa size={48} />

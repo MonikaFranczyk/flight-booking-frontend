@@ -74,6 +74,9 @@ export default function FlightDetailsPage() {
     const handleBookFlight = () => {
 
         if (!isAuthenticated) {
+            if (!flight) {
+                return;
+            }
 
             navigate("/login", {
                 state: {
@@ -158,16 +161,18 @@ export default function FlightDetailsPage() {
 
                     <Typography
                         variant="h3"
-                        fontWeight="bold"
-                        mb={4}
+                        sx={{
+                            fontWeight:"bold",
+                            mb: 4}}
                     >
                         Flight Details
                     </Typography>
 
                     <Stack
                         direction="row"
-                        justifyContent="space-between"
-                        alignItems="center"
+                        sx={{
+                        justifyContent:"space-between",
+                        alignItems:"center"}}
                     >
 
                         <Typography variant="h5">
@@ -185,15 +190,11 @@ export default function FlightDetailsPage() {
                     <Divider sx={{ my: 4 }} />
 
                     <Typography>
-                        Airline: {flight.airlineName}
+                        Airline: {flight.airline}
                     </Typography>
 
                     <Typography>
                         Flight number: {flight.flightNumber}
-                    </Typography>
-
-                    <Typography>
-                        Aircraft: {flight.aircraft}
                     </Typography>
 
                     <Typography>
@@ -212,13 +213,13 @@ export default function FlightDetailsPage() {
 
                     <Typography
                         variant="h5"
-                        mb={2}
+                        sx={{mb: 2}}
                     >
                         <LuggageIcon sx={{ mr: 1 }} />
                         Included baggage
                     </Typography>
 
-                    <Typography mb={2}>✔ Personal item</Typography>
+                    <Typography sx={{mb: 2}}>✔ Personal item</Typography>
 
                     <Typography>✔ Cabin baggage (8 kg)</Typography>
 
@@ -226,8 +227,10 @@ export default function FlightDetailsPage() {
 
                     <Typography
                         variant="h3"
-                        color="primary"
-                        fontWeight="bold"
+                        sx={{
+                            color:"primary",
+                            fontWeight:"bold"}}
+
                     >
                         {flight.price} PLN
                     </Typography>

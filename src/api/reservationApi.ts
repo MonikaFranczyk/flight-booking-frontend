@@ -1,5 +1,5 @@
 import axiosInstance from "./axios";
-import type { ReservationRequest } from "../types/Reservation";
+import type { Reservation, ReservationRequest } from "../types/Reservation";
 
 export const createReservation = async (
     request: ReservationRequest
@@ -37,7 +37,7 @@ export const cancelReservation = async (
     reservationId: number
 ): Promise<void> => {
 
-    await api.put(
+    await axiosInstance.put(
         `/reservations/${reservationId}/cancel`
     );
 };

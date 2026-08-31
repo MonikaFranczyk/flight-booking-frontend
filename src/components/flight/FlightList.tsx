@@ -1,7 +1,5 @@
 import { Alert, Stack } from "@mui/material";
-
 import type { Flight } from "../../types/Flight";
-
 import FlightCard from "./FlightCard";
 
 interface FlightListProps {
@@ -11,7 +9,7 @@ interface FlightListProps {
 
 export default function FlightList({
                                        flights,
-                                       passengers
+                                       passengers,
                                    }: FlightListProps) {
 
     if (flights.length === 0) {
@@ -20,7 +18,7 @@ export default function FlightList({
                 severity="info"
                 sx={{
                     borderRadius: 3,
-                    mt: 2
+                    mt: 2,
                 }}
             >
                 No flights found matching the selected criteria.

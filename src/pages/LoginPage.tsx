@@ -111,16 +111,20 @@ export default function LoginPage() {
 
                 <Typography
                     variant="h4"
-                    textAlign="center"
-                    fontWeight="bold"
+                    sx={{
+                        textAlign: "center",
+                        fontWeight: "bold"
+                    }}
                 >
                     Welcome back
                 </Typography>
 
                 <Typography
-                    textAlign="center"
-                    color="text.secondary"
-                    mb={4}
+                    sx={{
+                        textAlign: "center",
+                        color:"text.secondary",
+                        mb: 4
+                    }}
                 >
                     Sign in to SkyBook
                 </Typography>
@@ -195,8 +199,10 @@ export default function LoginPage() {
                 </Stack>
 
                 <Typography
-                    mt={4}
-                    textAlign="center"
+                    sx={{
+                        mt: 4,
+                        textAlign: "center"
+                    }}
                 >
 
                     Don't have an account?{" "}

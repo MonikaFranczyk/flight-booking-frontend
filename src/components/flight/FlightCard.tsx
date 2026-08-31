@@ -21,6 +21,7 @@ import type { Flight } from "../../types/Flight";
 
 interface Props {
     flight: Flight;
+    passengers: number;
 }
 
 export default function FlightCard({ flight }: Props) {
@@ -134,9 +135,9 @@ export default function FlightCard({ flight }: Props) {
 
                         <Stack
                             direction="row"
-                            justifyContent="space-between"
-                            alignItems="center"
-                            sx={{ mb: 3 }}
+                            sx={{ mb: 3,
+                                justifyContent:"space-between",
+                                alignItems:"center"}}
                         >
 
                             <Box>
@@ -153,8 +154,8 @@ export default function FlightCard({ flight }: Props) {
 
                                 <Typography
                                     variant="h6"
-                                    fontWeight={700}
                                     sx={{
+                                        fontWeight : 700,
                                         color: "#17233c"
                                     }}
                                 >
@@ -170,7 +171,7 @@ export default function FlightCard({ flight }: Props) {
                                     color: "text.secondary"
                                 }}
                             >
-                                {flight.airlineName}
+                                {flight.airline}
                             </Typography>
 
                         </Stack>
@@ -180,9 +181,10 @@ export default function FlightCard({ flight }: Props) {
 
                         <Stack
                             direction="row"
-                            alignItems="center"
-                            spacing={2}
+
                             sx={{
+                                alignItems:"center",
+                                spacing: 2,
                                 mb: 3
                             }}
                         >
@@ -193,8 +195,8 @@ export default function FlightCard({ flight }: Props) {
 
                                 <Typography
                                     variant="h5"
-                                    fontWeight={800}
                                     sx={{
+                                        fontWeight : 800,
                                         color: "#17233c"
                                     }}
                                 >
@@ -247,8 +249,8 @@ export default function FlightCard({ flight }: Props) {
 
                                 <Typography
                                     variant="h5"
-                                    fontWeight={800}
                                     sx={{
+                                        fontWeight: 800,
                                         color: "#17233c"
                                     }}
                                 >
@@ -289,16 +291,18 @@ export default function FlightCard({ flight }: Props) {
                                 variant="body2"
                                 color="text.secondary"
                             >
-                                Airline: {flight.airlineName}
+                                Airline: {flight.airline}
                             </Typography>
 
 
                             <Typography
                                 variant="body2"
                                 color="success.main"
-                                fontWeight={600}
-                            >
-                                {flight.availableSeats} seats available
+                                sx={{
+                                    fontWeight: 600}}
+                                    >
+                                    {flight.availableSeats}
+                                 seats available
                             </Typography>
 
                         </Stack>
@@ -349,8 +353,8 @@ export default function FlightCard({ flight }: Props) {
 
                         <Typography
                             variant="h5"
-                            fontWeight={800}
                             sx={{
+                                fontWeight: 800,
                                 color: "primary.main",
                                 mb: 3
                             }}

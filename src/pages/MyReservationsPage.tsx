@@ -159,7 +159,9 @@ export default function MyReservationsPage() {
 
                         <Typography
                             variant="h4"
-                            fontWeight="bold"
+                            sx={{
+                                fontWeight: "bold"
+                            }}
                         >
                             No reservations found
                         </Typography>
@@ -243,9 +245,10 @@ export default function MyReservationsPage() {
                                             {/* FLIGHT NUMBER + RESERVATION */}
                                             <Stack
                                                 direction="row"
-                                                justifyContent="space-between"
-                                                alignItems="center"
-                                                sx={{ mb: 3 }}
+                                                sx={{ mb: 3,
+                                                    justifyContent: "space-between",
+                                                    alignItems: "center"
+                                            }}
                                             >
                                                 <Box>
                                                     <Typography
@@ -260,8 +263,8 @@ export default function MyReservationsPage() {
 
                                                     <Typography
                                                         variant="h6"
-                                                        fontWeight={700}
                                                         sx={{
+                                                            fontWeight: 700,
                                                             color: "#17233c"
                                                         }}
                                                     >
@@ -284,19 +287,19 @@ export default function MyReservationsPage() {
                                             {/* ROUTE */}
                                             <Stack
                                                 direction="row"
-                                                alignItems="center"
-                                                spacing={2}
                                                 sx={{
-                                                    mb: 3
+                                                    mb: 3,
+                                                    alignItems: "center",
+                                                    spacing: 2
                                                 }}
                                             >
 
                                                 <Box sx={{ flex: 1 }}>
                                                     <Typography
                                                         variant="h5"
-                                                        fontWeight={800}
                                                         sx={{
-                                                            color: "#17233c"
+                                                            color: "#17233c",
+                                                            fontWeight: 800
                                                         }}
                                                     >
                                                         {reservation.departureAirport}
@@ -341,8 +344,8 @@ export default function MyReservationsPage() {
                                                 >
                                                     <Typography
                                                         variant="h5"
-                                                        fontWeight={800}
                                                         sx={{
+                                                            fontWeight: 800,
                                                             color: "#17233c"
                                                         }}
                                                     >
@@ -384,9 +387,11 @@ export default function MyReservationsPage() {
                                             >
 
                                                 <Stack
-                                                    direction="row"
-                                                    spacing={1}
-                                                    alignItems="center"
+                                                    sx={{
+                                                        direction:"row",
+                                                        spacing: 1,
+                                                        alignItems: "center"
+                                                    }}
                                                 >
                                                     <LuggageIcon
                                                         sx={{
@@ -472,8 +477,8 @@ export default function MyReservationsPage() {
 
                                             <Typography
                                                 variant="h5"
-                                                fontWeight={800}
                                                 sx={{
+                                                    fontWeight: 800,
                                                     color: "primary.main",
                                                     mb: 3
                                                 }}

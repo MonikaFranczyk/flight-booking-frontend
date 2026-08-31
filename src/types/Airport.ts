@@ -8,5 +8,5 @@ export interface Airport {
 
     country: string;
 
-    code: string;
+    iataCode: string;
 }
