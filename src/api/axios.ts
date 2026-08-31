@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: "http://flight-booking-system-env.eba-eedyr4xa.eu-north-1.elasticbeanstalk.com/api",
+    baseURL: "https://d13hn80jis774u.cloudfront.net/api",
     headers: {
         "Content-Type": "application/json"
     }
