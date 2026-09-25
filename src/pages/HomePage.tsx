@@ -68,7 +68,7 @@ export default function HomePage() {
                             mb: 2
                         }}
                     >
-                        Your journey starts here!
+                        Your journey starts here!!!
                     </Typography>
 
                     <Typography
